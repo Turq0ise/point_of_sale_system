@@ -32,6 +32,16 @@ def writeToFile(object):
     with open(ACCOUNTS_DATA_FILE_NAME, "w") as file:
         json.dump(data, file, default=vars, indent=4)
 
+def updateFile(object):
+    data = getFileContents()
+    for user in data:
+        if user["email"] == object.email:
+            data.remove(user)
+    data.append(object)
+    with open(ACCOUNTS_DATA_FILE_NAME, "w") as file:
+        json.dump(data, file, default=vars, indent=4)
+
+    
 def checkIfEmailTaken(email):
     data = getFileContents()
     for user in data:
