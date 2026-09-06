@@ -1,0 +1,12 @@
+[
+    {
+        "email": "test@email.com",
+        "password": "123",
+        "customerId": "aca5262e-8064-5033-94b5-80f029cb029f",
+        "name": "test",
+        "address": "123 ABC Street",
+        "orders": [
+            "ORD-001"
+        ]
+    }
+]

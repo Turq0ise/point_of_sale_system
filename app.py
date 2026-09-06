@@ -108,7 +108,7 @@ class App:
         name = input("Username: ")
         address = input("Address: ")
 
-        self.currentUser = customer_management.createAccount(email, password, name, address)
+        self.current_user = customer_management.createAccount(email, password, name, address)
         return "dashboard"
 
     def page_dashboard(self):
