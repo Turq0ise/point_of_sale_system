@@ -15,7 +15,7 @@ class Menu:
         ]
 
     def display_menu(self):
-        print("\n========== FOOD MENU ==========")
+        # print("\n========== FOOD MENU ==========")
 
         for item in self.items:
             print(f"{item.item_num}. {item.name} - ₱{item.price:.2f}")
