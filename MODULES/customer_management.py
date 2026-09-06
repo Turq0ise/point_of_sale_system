@@ -61,4 +61,12 @@ def createAccount(email, password, name, address):
 def getAccount(email, password):
     data = getFileContents()
     for user in data:
-        if user["email"] == email and user["password"] == password: return user
+        if user["email"] == email and user["password"] == password: 
+            return Customer(
+                email=user["email"],
+                password=user["password"],
+                customerId=user["customerId"],
+                name=user["name"],
+                address=user["address"],
+                orders=user["orders"]
+            )

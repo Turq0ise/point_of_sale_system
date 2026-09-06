@@ -14,5 +14,13 @@
         "name": "test",
         "address": "123 ABC Street",
         "orders": []
+    },
+    {
+        "email": "joel@email.com",
+        "password": "password",
+        "customerId": "64aa0068-b2f4-512f-abce-814cbd04fadc",
+        "name": "joel",
+        "address": "45 mirage",
+        "orders": []
     }
 ]
