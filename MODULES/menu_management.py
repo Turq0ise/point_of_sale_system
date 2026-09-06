@@ -20,6 +20,6 @@ class Menu:
         for item in self.items:
             print(f"{item.item_num}. {item.name} - ₱{item.price:.2f}")
 
-menu = Menu()
-menu.display_menu()
+# menu = Menu()
+# menu.display_menu()
 
